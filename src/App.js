@@ -19,7 +19,7 @@ function App() {
         {/* Define the routes here, so only one page shows at a time */}
         <Routes>
           {/* Route for the home (LandingPage) */}
-          <Route path="/Drypp_web" element={<LandingPage />} />
+          <Route path="/web" element={<LandingPage />} />
 
           {/* Route for the about page */}
           <Route path="/about" element={<About />} />
