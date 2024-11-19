@@ -1,0 +1,211 @@
+/* Global reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make sure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure font size adjusts on smaller screens */
+body {
+  font-size: 16px;
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  /* Example of a container with max width */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  /* Adjust layouts for tablets */
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none; /* Hide navigation on tablets */
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  /* You can adjust columns to stack on tablet */
+  .column {
+    flex: 1 1 100%; /* Stack columns */
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Adjust header for mobile */
+  .header {
+    display: block;
+    text-align: center;
+  }
+
+  .nav {
+    display: none; /* Hide nav on mobile */
+  }
+
+  .main-content {
+    padding: 5px;
+  }
+
+  /* Stack elements vertically on mobile */
+  .column {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Buttons should be full-width on mobile */
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.about-container {
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  
+  .intro, .vision {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .team-member {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    margin-top:15px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: white;
+  }
+
+  #titles{
+    color: black;
+  }
+  
+  .description {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color:#333;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    font-size: 1.5rem;
+    color: #0077b5; /* LinkedIn blue */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #005582;
+  }
+  
+  .social-icons .fas.fa-envelope {
+    color: #ff5f5f; /* Email icon red */
+  }
+  
+  .social-icons .fas.fa-envelope:hover {
+    color: #d94040;
+  }
+  
+  a {
+    color: #0077b5;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .team-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member {
+      width: 90%;
+    }
+  }
+  
