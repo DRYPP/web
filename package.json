@@ -2,7 +2,7 @@
   "name": "drypp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mouadlah.github.io/Drypp_web",
+  "homepage": "https://mouadlah.github.io/web",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
